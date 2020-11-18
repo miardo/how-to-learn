@@ -1,3 +1,12 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,7 +29,7 @@
   position: absolute;
   background-image: url("../images/logo_place_header.svg");
   z-index: 2;
- }
+}
 
 .header {
   height: 100vh;
@@ -59,6 +68,11 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  transition: 0.2s ease;
+  opacity: 70%;
+}
+
 .header__main-illustration {
   position: absolute;
   width: 765px;
@@ -79,11 +93,95 @@
   background-color: #2f80ed;
 }
 
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+.techniques {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards__item {
+  width: 240px;
+  margin-top: 60px;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 43px auto 0px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 16px auto 0px;
+}
+
+.video__iframes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: -60px;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+.resources {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 100px;
+  padding-bottom: 217px;
+  }
+
+.resources__logo-zone {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+.description {
+  padding-top: 100px;
+}
+
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 100px auto 0px;
+  margin: auto;
 }
 
 .two-columns__brief {
@@ -113,6 +211,10 @@
 
 .two-columns__paragraph:last-child {
   margin-top: 30px;
+}
+
+.two-columns__oakley-paragraph {
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -177,7 +279,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .feynman__title {
@@ -217,6 +319,11 @@
   text-decoration: none;
   color: #2f80ed;
   z-index: 1;
+}
+
+.feynman__link:hover {
+  transition: 0.2s ease;
+  opacity: 70%;
 }
 
 .kaufman {
@@ -325,8 +432,86 @@
   color: white;
 }
 
+.footer__column-link:hover {
+  transition: 0.2s ease;
+  opacity: 70%;
+}
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: auto;
+}
+
+.khan__author {
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.khan__quote {
+  width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline {
+  margin-top: 10px;
+  margin-bottom: 68px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.khan__buy-link {
+  margin-left: 48px;
+  color: #2f80ed;
+  font-size: 30px;
+  line-height: 42px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.khan__buy-link:hover {
+  transition: 0.2s ease;
+  opacity: 70%;
 }

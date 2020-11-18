@@ -1,0 +1,7 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 100px;
+  justify-content: center;
+  text-align: center;
+}
