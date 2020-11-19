@@ -2,13 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
 </head>
 <body>
-  <div class="page">
+  <div class="root">
     <header class="header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
@@ -18,8 +17,7 @@
       <img src="./images/header-image.png" class="header__main-illustration" alt="Опять двойка">
       <div class="rotation header__square-pic"></div>
     </header>
-    <main class="content">
-      
+    <main class="content">     
       <section class="description">
       <div class="two-columns">
         <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
@@ -32,7 +30,6 @@
         </div>
       </div>
       </section>
-
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
@@ -71,16 +68,14 @@
           </div>
         </div>
       </section>
-
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe class="video__iframe"  width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="video__iframe"  width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe"  width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe"  width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
-
       <section class="oakley">
         <div class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
@@ -89,16 +84,13 @@
             </p>
             </div>
         </div>
-      </section>
-
-      
+      </section>     
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
         <img src="./images/feynman.png" class="feynman__img" alt="Джош Кауфман">
       </section>
-
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
@@ -139,7 +131,6 @@
           </div>
         </div>
       </section>
-
       <section class="khan">
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
@@ -154,7 +145,6 @@
             </div>
         </div>
       </section>
-
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
@@ -202,7 +192,6 @@
         </div>
         <div class="rotation kaufman__triangle"></div>
       </section>
-
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
@@ -213,7 +202,6 @@
           <img src="./logo/resources-polka.svg" alt="Полка" class="resources__logo">       
         </div>
       </section>
-
     </main>
     <footer class="footer">
     <div class="footer__columns">
