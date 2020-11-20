@@ -1,0 +1,4 @@
+.resources__logo-link:hover {
+  transition: 0.2s ease;
+  opacity: 70%;
+}
